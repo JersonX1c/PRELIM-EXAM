@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Dashboard - Dominican College of Tarlac</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .status-present {
+      color: white;
+      background-color: green;
+      padding: 2px 8px;
+      border-radius: 5px;
+    }
+    .status-absent {
+      color: white;
+      background-color: red;
+      padding: 2px 8px;
+      border-radius: 5px;
+    }
+    .logo {
+      width: 250px;
+      margin: 20px auto;
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="image.png" alt="DCT Logo" style="width:40px;" class="rounded-pill">
+    </a>
+    <a class="navbar-brand" href="#">{Group 11}</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold text-success" aria-current="page" href="students.html">Students</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="attendance.html">Attendance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html">Form</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <div class="container mt-4">
+   
+    <div class="row text-white">
+      <div class="col-md-4 mb-3">
+        <div class="card bg-primary">
+          <div class="card-body">
+            <h5 class="card-title">10</h5>
+            <p class="card-text">Total Students</p>
+            <button class="btn btn-light btn-sm">Add Student</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card bg-success">
+          <div class="card-body">
+            <h5 class="card-title">3</h5>
+            <p class="card-text">Total Present</p>
+            <button class="btn btn-light btn-sm">See More...</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card bg-danger">
+          <div class="card-body">
+            <h5 class="card-title">4</h5>
+            <p class="card-text">Total Absent</p>
+            <button class="btn btn-light btn-sm">See More...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="table-responsive mt-4">
+      <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+         <tr>
+        <th>No.</th>
+        <th>Student No.</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Gender</th>
+        <th>Civil Status</th>
+        <th>Nationality</th>
+        <th>Date of Birth</th>
+        <th>Place of Birth</th>
+        <th>Address</th>
+        <th>Religion</th>
+        <th>Contact No.</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>STU2025001</td><td>John Doe</td><td><span class="status badge bg-danger">Absent</span></td><td>Male</td><td>Single</td><td>Filipino</td><td>Jan 1, 2000</td><td>Street, Barangay, City, Province</td><td>Street, Barangay, City, Province, Zip Code, Philippines</td><td>Roman Catholic</td><td>09123456789</td><td>sample@gmail.com</td></tr>
+      <tr><td>2</td><td>STU2025002</td><td>Jane Smith</td><td><span class="status badge bg-danger">Absent</span></td><td>Female</td><td>Single</td><td>Filipino</td><td>Jan 1, 2000</td><td>Street, Barangay, City, Province</td><td>Street, Barangay, City, Province, Zip Code, Philippines</td><td>Roman Catholic</td><td>09123456789</td><td>sample@gmail.com</td></tr>
+      <tr><td>3</td><td>STU2025003</td><td>Michael Brown</td><td><span class="status badge bg-danger">Absent</span></td><td>Male</td><td>Single</td><td>Filipino</td><td>Jan 1, 2000</td><td>Street, Barangay, City, Province</td><td>Street, Barangay, City, Province, Zip Code, Philippines</td><td>Roman Catholic</td><td>09123456789</td><td>sample@gmail.com</td></tr>
+      <tr><td>4</td><td>STU2025004</td><td>Emily Davis</td><td><span class="status badge bg-danger">Absent</span></td><td>Female</td><td>Single</td><td>Filipino</td><td>Jan 1, 2000</td><td>Street, Barangay, City, Province</td><td>Street, Barangay, City, Province, Zip Code, Philippines</td><td>Roman Catholic</td><td>09123456789</td><td>sample@gmail.com</td></tr>
+      <tr><td>5</td><td>STU2025005</td><td>Chris Johnson</td><td><span class="status badge bg-success">Present</span></td><td>Male</td><td>Single</td><td>Filipino</td><td>Jan 1, 2000</td><td>Street, Barangay, City, Province</td><td>Street, Barangay, City, Province, Zip Code, Philippines</td><td>Roman Catholic</td><td>09123456789</td><td>sample@gmail.com</td></tr>
+      <tr><td>6</td><td>STU2025006</td><td>Sarah Lee</td><td><span class="status badge bg-danger">Absent</span></td><td>Female</td><td>Single</td><td>Filipino</td><td>Jan 1, 2000</td><td>Street, Barangay, City, Province</td><td>Street, Barangay, City, Province, Zip Code, Philippines</td><td>Roman Catholic</td><td>09123456789</td><td>sample@gmail.com</td></tr>
+      <tr><td>7</td><td>STU2025007</td><td>David Clark</td><td><span class="status badge bg-success">Present</span></td><td>Male</td><td>Single</td><td>Filipino</td><td>Jan 1, 2000</td><td>Street, Barangay, City, Province</td><td>Street, Barangay, City, Province, Zip Code, Philippines</td><td>Roman Catholic</td><td>09123456789</td><td>sample@gmail.com</td></tr>
+      <tr><td>8</td><td>STU2025008</td><td>Laura Wilson</td><td><span class="status badge bg-success">Present</span></td><td>Female</td><td>Single</td><td>Filipino</td><td>Jan 1, 2000</td><td>Street, Barangay, City, Province</td><td>Street, Barangay, City, Province, Zip Code, Philippines</td><td>Roman Catholic</td><td>09123456789</td><td>sample@gmail.com</td></tr>
+      <tr><td>9</td><td>STU2025009</td><td>Ryan Martinez</td><td><span class="status badge bg-success">Present</span></td><td>Male</td><td>Single</td><td>Filipino</td><td>Jan 1, 2000</td><td>Street, Barangay, City, Province</td><td>Street, Barangay, City, Province, Zip Code, Philippines</td><td>Roman Catholic</td><td>09123456789</td><td>sample@gmail.com</td></tr>
+      <tr><td>10</td><td>STU2025010</td><td>Alice Taylor</td><td><span class="status badge bg-danger">Absent</span></td><td>Female</td><td>Single</td><td>Filipino</td><td>Jan 1, 2000</td><td>Street, Barangay, City, Province</td><td>Street, Barangay, City, Province, Zip Code, Philippines</td><td>Roman Catholic</td><td>09123456789</td><td>sample@gmail.com</td></tr>
+    </tbody>
+    </table>
+    </div>
+
+    <div class="text-center mt-5">
+      <img src="ccs.png" alt="Dominican College Logo" class="logo">
+      <h4>Departments</h4>
+      <h5>College Of Computer</h5>
+    </div>
+   
+    <div class="mt-5">
+      <h3 class="text-center mb-4">PVMGO</h3>
+      <div class="row text-center">
+        <div class="col-md-6 mb-4">
+          <h5>Vision</h5>
+          <p>To be a center of academic excellence...</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5>Mission</h5>
+          <p>We commit to providing a Christian and Dominican education...</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Faith (Fides)</h5>
+          <p>Prayer and devotion to God, commitment to moral values...</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Patriotism (Patria)</h5>
+          <p>Love for country, respect for history and heritage...</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Wisdom (Sapientia)</h5>
+          <p>Seek knowledge and truth, use learning to serve others...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
